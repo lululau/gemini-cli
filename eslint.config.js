@@ -242,6 +242,15 @@ export default tseslint.config(
       '@typescript-eslint/no-require-imports': 'off',
     },
   },
+  {
+    files: ['./learnings/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+// Prettier config must be last
   // Prettier config must be last
   prettierConfig,
   // extra settings for scripts that we run directly with node

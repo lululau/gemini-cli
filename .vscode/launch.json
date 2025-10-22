@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      // execute current js using node
+      "type": "node",
+      "request": "launch",
+      "name": "Execute Current JS",
+      "program": "${file}",
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Build & Launch CLI",
